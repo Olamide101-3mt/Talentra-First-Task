@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import { useAuthStore } from "./store/useAuthStore";
-import Sidebar from "./components/sidebar";
+// Import exact filename (include extension) to avoid case-sensitivity issues on Linux/Vercel
+import Sidebar from "./components/sidebar.jsx";
 import Topbar from "./components/Topbar";
 
 import Dashboard from "./routes/Mainpage";
