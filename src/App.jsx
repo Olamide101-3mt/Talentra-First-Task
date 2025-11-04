@@ -3,17 +3,17 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import { useAuthStore } from "./store/useAuthStore";
 // Import exact filename (include extension) to avoid case-sensitivity issues on Linux/Vercel
 import Sidebar from "./components/Sidebar.jsx";
-import Topbar from "./components/Topbar";
+import Topbar from "./components/Topbar.jsx";
 
-import Dashboard from "./routes/Mainpage";
-import Transactions from "./routes/Transactions";
-import Invoices from "./routes/Invoices";
-import Wallets from "./routes/Wallets";
-import Settings from "./routes/Settings";
-import Help from "./routes/Help";
-import Signin from "./routes/Signin";
-import Signup from "./routes/Signup";
-import PrivateRoute from "./components/PrivateRoute";
+import Dashboard from "./routes/Mainpage.jsx";
+import Transactions from "./routes/Transactions.jsx";
+import Invoices from "./routes/Invoices.jsx";
+import Wallets from "./routes/Wallets.jsx";
+import Settings from "./routes/Settings.jsx";
+import Help from "./routes/Help.jsx";
+import Signin from "./routes/Signin.jsx";
+import Signup from "./routes/Signup.jsx";
+import PrivateRoute from "./components/PrivateRoute.jsx";
 
 export default function App() {
   const [isLoading, setIsLoading] = React.useState(true);
