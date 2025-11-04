@@ -9,7 +9,7 @@ const APPWRITE_PROJECT = import.meta.env.VITE_APPWRITE_PROJECT_ID || "690590a400
 client
   .setEndpoint(APPWRITE_ENDPOINT)
   .setProject(APPWRITE_PROJECT)
-  .setPlatform(window.location.origin); // 👈 IMPORTANT for CORS + browser sessions
+  // .setPlatform(window.location.origin); // 👈 IMPORTANT for CORS + browser sessions
 
 export const account = new Account(client);
 export { ID };
